@@ -1,0 +1,2529 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopper.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e5fcab2af9.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            font-family: poppins, Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        #header_content {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .first_h {
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin-top: 0;
+        }
+
+        .second_h {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            /*justify-content: center;*/
+            justify-content: space-around;
+        }
+
+        .nav_f {
+            margin-right: 2em;
+            margin-top: 1em;
+        }
+
+        .nav_s {
+            margin-left: 2em;
+            margin-top: 1em;
+        }
+
+        .icons {
+            margin-left: -2.5em;
+            margin-top: 1em;
+        }
+
+        .logo_link {
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+            .logo_link h2 {
+                margin-top: 5px;
+            }
+
+        .list, .link {
+            display: inline;
+            margin: 12px;
+            color: rgb(29, 29, 29);
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #page_banner {
+            z-index: 2;
+            margin-top: 8em;
+            width: 100%;
+            height: 33em;
+            margin-left: -0.5em;
+            margin-right: 0;
+        }
+
+        #banner, #banner_ {
+            width: 100%;
+            padding: 25px;
+            height: 100%;
+            background-image: url('img/header_alani.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #msg_box {
+            margin-top: 7.5em;
+            /* margin-left: 25%;*/
+            color: white;
+        }
+
+        .summer_s {
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        #seventy_p {
+            font-size: 100px;
+            font-weight: bolder;
+            margin-top: -0.3em;
+            margin-left: 0;
+        }
+
+        .promo_c {
+            /* margin-top: -3em;*/
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #shop_now {
+            border: none;
+            width: 10em;
+            padding: 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #CF4A79;
+            border-radius: 3px;
+        }
+
+            #shop_now:active {
+                transform: scale(0.9);
+            }
+
+        .click1 {
+            background-color: white;
+            font-size: 20px;
+            font-weight: bold;
+            width: fit-content;
+            padding: 3px;
+        }
+
+        #grid_f {
+            width: 100%;
+            z-index: 3;
+            margin-top: 6em;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pro {
+            width: 33%;
+            height: 16em;
+            margin-left: 1em;
+            padding: 10px;
+            border-radius: 2px;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        #pro1 {
+            background-image: url('./img/zrr.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+            #pro1:hover {
+                box-shadow: 5px 5px 5px #777777;
+                transform: scale(1.02);
+            }
+
+        #pro2 {
+            background-image: url('./img/adl.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+            #pro2:hover {
+                box-shadow: 5px 5px 5px #777777;
+                transform: scale(1.02);
+            }
+
+        #pro3 {
+            background-image: url('./img/hh.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+            #pro3:hover {
+                box-shadow: 5px 5px 5px #777777;
+                transform: scale(1.02);
+            }
+
+        #msg {
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .shop_n {
+            font-weight: bold;
+        }
+
+        .heading {
+            margin-top: 5em;
+            margin-bottom: 3em;
+            text-align: center;
+        }
+
+        .cathegory {
+            font-size: 33px;
+        }
+
+        .wom {
+            margin: 10px;
+            font-size: 15px;
+        }
+
+        .post, .wom {
+            text-align: center;
+            text-decoration: none;
+            color: rgb(27, 27, 27);
+            font-size: 17px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .pro_img {
+            width: 10em;
+        }
+
+
+        #grid_s {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width:1000px) {
+            .content {
+                display: block !important;
+                flex-wrap: wrap !important;
+            }
+        }
+
+
+        #big_post {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 5em;
+        }
+
+        .one_bp {
+            width: 34em;
+            height: 36em;
+            margin: 20px;
+        }
+
+        .bp_cap {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            font-size: 21px;
+            font-weight: bold;
+            width: 50%;
+            margin: -4em auto;
+        }
+
+        .shop {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #one_bp1 {
+            background-image: url(https://reginadanielsfashion.com/wp-content/uploads/2022/06/cf39b4d5-8e40-4925-9e22-51f57010c846-500x633.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #one_bp2 {
+            background-image: url(https://reginadanielsfashion.com/wp-content/uploads/2022/06/c2719ed6-59fb-4e64-bdc9-d02731de2ef6-500x633.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .price_tag {
+            background-color: rgb(34, 34, 34);
+            width: fit-content;
+            padding: 20px;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin-left: 1em;
+        }
+
+        .canc {
+            color: rgb(231, 231, 231);
+            font-size: 15px;
+            text-decoration: line-through;
+        }
+
+        .main_display {
+            width: 100%;
+        }
+
+        .img {
+            width: 15em;
+            margin: 10px;
+            height: 19em;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #flex {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .caption_ {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        #display_pro {
+            margin-top: 10%;
+            width: 100%;
+        }
+
+        .sale {
+            animation-name: zoom;
+            animation-duration: 3s;
+        }
+
+        .new_arr {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 5%;
+            text-align: center;
+            color: rgb(49, 49, 49);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .cancelled {
+            color: grey;
+            text-decoration: line-through;
+        }
+
+        .new {
+            color: rgb(233, 210, 79);
+        }
+
+        #img1 {
+            background-image: url('img/gren.jpg');
+        }
+
+        #img2 {
+            background-image: url('img/cr1.jpg');
+        }
+
+        #img3 {
+            background-image: url('img/dr2.jpg');
+        }
+
+        #img4 {
+            background-image: url('img/sw5.jpg');
+        }
+
+        #img5 {
+            background-image: url('img/sw.jpg');
+        }
+
+        .like_btn {
+            width: fit-content;
+            background-color: white;
+            padding: 8px;
+            float: right;
+            border-radius: 50%;
+            margin: 1em;
+        }
+
+        .red-heart {
+            color: red;
+            cursor: pointer;
+        }
+
+        .sale_tag {
+            float: left;
+            border: 2px solid rgb(233, 210, 79);
+            color: rgb(233, 210, 79);
+            padding: 5px;
+            margin: 0.5em;
+            font-size: small;
+        }
+
+
+        .pro10 {
+            width: 32em;
+        }
+
+        .first_box {
+            margin-left: 12em;
+            width: 60%;
+        }
+
+        .sec_box {
+            width: 30%;
+            text-align: center;
+            margin-right: 12em;
+        }
+
+        #sec_main {
+            margin-top: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .gray {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(155, 155, 155);
+        }
+
+        .head {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .sale_tag2 {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            width: 20%;
+            float: left;
+        }
+
+        i {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .blogimg {
+            width: 100%;
+        }
+
+        .blog {
+            width: 28%;
+            padding-bottom: 10px;
+            background-color: white;
+            margin: 15px;
+            border-bottom-left-radius: 2.5px;
+            border-bottom-right-radius: 2.5px;
+            animation-name: zoom;
+            animation-duration: 3s;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(0.8);
+            }
+        }
+
+        .blog:hover {
+            box-shadow: 0 0 25px #777777;
+            transform: scale(1.02);
+        }
+
+        .date {
+            font-size: 15px;
+            color: rgb(180, 180, 180);
+            margin-top: 0;
+        }
+
+        #blog {
+            margin-top: 3em;
+            width: 100%;
+            padding: 40px;
+            background-color: rgb(233, 233, 233);
+            margin-left: -1em;
+            margin-right: 0;
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog_post_box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog_head {
+            text-align: center;
+        }
+
+        .blogp_decrip {
+            padding: 10px;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .centre {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 5%;
+            text-decoration: underline;
+        }
+
+        #features {
+            background-color: white;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .overall {
+            display: flex;
+            margin: 1em;
+        }
+
+        .icon, .info {
+            margin: 10px;
+        }
+
+        #feat {
+            display: flex;
+            justify-content: center;
+        }
+
+        .uppercase {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .light {
+            font-size: 13px;
+            color: #7c7c7c;
+        }
+
+        #footer_box {
+            color: white;
+            width: 100%;
+            padding: 20px;
+            padding-top: 6%;
+            margin-left: -0.6em;
+            margin-right: 0;
+            margin-bottom: -3%;
+            background-color: rgb(29, 29, 29);
+        }
+
+        .block_links {
+            display: block;
+            color: #949494;
+            margin: 5px;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .s_foot {
+            display: flex;
+            justify-content: center;
+        }
+
+        #email {
+            width: 22em;
+            height: 1.7em;
+            padding: 20px;
+            border: none;
+            border-radius: 1px;
+            background-color: rgb(49, 49, 49);
+            margin: 0.5em;
+            color: white;
+        }
+
+        #submit {
+            width: 8em;
+            /* padding: 22px;*/
+            font-size: 15px;
+            border-radius: 1px;
+            border: none;
+            color: white;
+            background-color: #5e5e5e;
+            font-weight: 600;
+            margin: 0.5em;
+        }
+
+            #submit:hover {
+                background-color: #4d4c4c;
+            }
+
+            #submit:active {
+                transform: scale(0.9);
+            }
+
+        .inputs {
+            display: flex;
+            justify-content: center;
+        }
+
+        .want {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        ::placeholder {
+            font-size: 15px;
+        }
+
+        hr {
+            border: 0.1px solid #4d4c4c;
+            margin-left: -5%;
+        }
+
+        /**/
+
+        .space {
+            display: flex;
+            justify-content: center;
+            margin: 2%;
+        }
+
+        .other_links {
+            margin: 1.6em;
+        }
+        /*.img_links{
+             margin-left: 20%;
+          }*/
+        .bold {
+            font-size: 15px;
+            line-height: 3em;
+        }
+
+        .copy {
+            font-size: small;
+            color: rgb(155, 155, 155);
+            margin-left: 5%;
+        }
+
+        #extras {
+            margin-top: 2%;
+        }
+
+        .pay {
+            float: right;
+            margin-top: -2.3em;
+            margin-right: 10%;
+        }
+
+        .fa-retweet, .fa-lock, .fa-tag, .fa-truck {
+            color: rgb(252, 163, 61);
+        }
+
+        /* .drawer_icon {
+              display: none;
+              margin-top: -2em !important;
+          }
+        */
+        .drawer_icon {
+            display: none;
+            position: relative;
+        }
+
+        .drawer_content {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #FFCF9E;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+        }
+
+            .drawer_content.open {
+                height: 400px;
+            }
+
+
+        .cart-dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 86%;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+            width: 250px;
+        }
+        @media (max-width:1600px){
+            .cart-dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 78%;
+                background-color: white;
+                border: 1px solid #ccc;
+                padding: 10px;
+                z-index: 1;
+                width: 250px;
+            }
+        }
+
+        @media (max-width:1400px) {
+            .cart-dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 78%;
+                background-color: white;
+                border: 1px solid #ccc;
+                padding: 10px;
+                z-index: 1;
+                width: 250px;
+            }
+        }
+
+        .cart-icon.active .cart-dropdown {
+            display: block;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .cart-item img {
+                width: 40px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .cart-item p {
+                margin: 0;
+                flex: 1;
+            }
+
+            .cart-item span {
+                font-weight: bold;
+            }
+
+        .cart-total {
+            text-align: right;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+
+
+
+
+        .spt {
+            display: none;
+           /* position: absolute;
+            top: 100%;
+            left: 5%;*/
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            z-index: 1;
+            width: 250px;
+        }
+
+        .cart-icn.active .spt {
+            display: block;
+        }
+
+        .cartItm {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .cartItm img {
+                width: 40px;
+                height: auto;
+                margin-right: 10px;
+            }
+
+            .cartItm p {
+                margin: 0;
+                flex: 1;
+            }
+
+            .cartItm span {
+                font-weight: bold;
+            }
+
+        .cart-tl {
+            text-align: right;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .payments {
+            width: 2.5em;
+        }
+
+        .gray {
+            color: gray;
+            margin: 1px;
+        }
+        /* MEDIA QUERY FOT RESPONSIVE WEB PAGE */
+        @media (max-width: 1050px) {
+            .nav_f, .nav_s, .icons {
+                display: none;
+            }
+
+            .second_h {
+                display: inline;
+            }
+
+            .logo_area {
+                padding-left: 10%;
+            }
+
+          
+
+
+            .drawer_icon {
+                display: block;
+                position: absolute;
+                top: 60px;
+                right: 30px;
+            }
+
+            .menuuuu {
+                display: flex !important;
+            }
+
+            .drawer_content {
+                display: none;
+                position: static;
+                width: 100%;
+                height: auto;
+                max-height: auto;
+                transition: none;
+            }
+
+                .drawer_content.open {
+                    max-height: 400px;
+                }
+
+                .drawer_content ul li {
+                    list-style-type: none;
+                }
+
+                    .drawer_content ul li a {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+
+            .sol_menu {
+                position: relative !important;
+                float: left !important;
+                width: 60% !important;
+            }
+
+
+
+                .sol_menu ul li p:hover {
+                    transform: scale(1.02);
+                    cursor: pointer;
+                }
+
+            @media (max-width:600px) {
+                .sol_menu {
+                    display: block !important;
+                    width: 100% !important;
+                }
+            }
+
+            .sag-menu {
+                position: relative !important;
+                float: right !important;
+                right: 10px !important;
+                width: 40% !important;
+            }
+
+                .sag-menu ul li {
+                    margin-top: 20px;
+                }
+
+            @media (max-width:600px) {
+                .sag-menu {
+                    position: relative !important;
+                    float: left !important;
+                    right: 10px !important;
+                    width: 100% !important;
+                }
+
+                    .sag-menu ul li {
+                        border-bottom: 2px solid black;
+                    }
+
+
+                .spt {
+                    display: none;
+                    position: relative;
+                    top: 100%;
+                    left : 5%;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    z-index: +9999!important;
+                    width: 250px;
+                }
+
+                .cart-icn.active .spt {
+                    display: block;
+                }
+
+                .cartItm {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    padding: 5px;
+                    border-bottom: 1px solid #ddd;
+                }
+
+                    .cartItm img {
+                        width: 40px;
+                        height: auto;
+                        margin-right: 10px;
+                    }
+
+                    .cartItm p {
+                        margin: 0;
+                        flex: 1;
+                    }
+
+                    .cartItm span {
+                        font-weight: bold;
+                    }
+
+                .cart-tl {
+                    text-align: right;
+                    padding-top: 10px;
+                    font-weight: bold;
+                }
+            }
+
+
+            .one_bp {
+                width: 26em;
+            }
+
+            .img_links {
+                margin-left: 7%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .pro {
+                width: 28%;
+                height: 12em;
+            }
+
+            .content, #flex {
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+
+            .one_bp {
+                width: 22em;
+            }
+
+            .pro_img {
+                width: 13em;
+            }
+
+            .pro10 {
+                width: 26em;
+            }
+
+            .sec_box {
+                width: 45%;
+                text-align: center;
+                margin-right: 10em;
+            }
+
+            #feat {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .overall {
+                margin: 0.1em;
+                margin-left: 10%;
+            }
+
+            .s_foot {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 700px) {
+            #big_post {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .one_bp {
+                width: 30em;
+            }
+
+            .box {
+                margin-bottom: 13%;
+            }
+
+            .first_box {
+                width: 90%;
+                margin-left: 5px;
+            }
+
+            .pro10 {
+                width: 100%;
+            }
+
+            #sec_main {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sec_box {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 50px auto;
+            }
+
+            .blog_post_box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .blog {
+                width: 73%;
+            }
+
+            #grid_f {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pro {
+                width: 95%;
+                margin: 10px;
+                height: 17em;
+            }
+
+            .copy {
+                width: 40%;
+            }
+
+            .pay {
+                margin-right: 2%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .blog {
+                width: 90%;
+                text-align: center;
+            }
+
+            .other_links {
+                margin: 0.3em;
+            }
+        }
+
+        .category {
+            display: none;
+        }
+
+        .cnn {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center !important;
+            align-items: center !important;
+            margin-left: 10%;
+        }
+
+        .sp {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+
+
+        @media (max-width:515px) {
+            .sp {
+                display: block !important;
+                flex-wrap: wrap !important;
+            }
+
+
+            .cnn {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center !important;
+                align-items: center !important;
+                margin-left: 2%;
+            }
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <div id="entire_page">
+        <div id="container">
+            <!--START OF HEADER-->
+            <div id="header_content">
+                <div class="first_h">
+                    <p>⚡️ KEYİFLİ ALIŞVERİŞLER :))) ⚡️</p>
+                </div>
+                <div class="second_h">
+                    <nav class="nav_f">
+                        <a href="" class="link">Erkek</a>
+                        <a href="" class="link">Kadın</a>
+                        <a href="" class="link">Çocuk - Bebek</a>
+                        <a href="" class="link">Elektronik</a>
+                        <a href="" class="link">Süper Market</a>
+
+                    </nav>
+                    <div class="logo_area">
+                        <a href="" class="logo_link"><h2 class="logo"> B&C. Shopp</h2></a>
+                    </div>
+                    <div class="drawer_icon"><button id="drawer_trigger"><span class="dot"><i class="fa-solid fa-bars"></i></span></button></div>
+                    <div class=" =menuuuu">
+                        <div class="drawer_content" id="drawer_content">
+
+                            <div class="sol_menu">
+                                <ul>
+                                    <li><p><a href="#">Erkek</a></p></li>
+                                    <hr />
+                                    <li><p><a href="#">Kadın</a></p></li>
+                                    <hr />
+                                    <li><p><a href="#">Çocuk-Bebek</a></p></li>
+                                    <hr />
+                                    <li><p><a href="#">Elektronik</a></p></li>
+                                    <hr />
+                                    <li><p><a href="#">Süper Market</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="sag-menu">
+                                <ul>
+                                    <li>
+                                        <i class="fa-regular fa-heart" id="favoriIconnn"></i> <label id="mobil_fav">0</label>
+
+
+                                    </li>
+
+
+                                    <li class=" cart-icn">
+                                        <i class="fa-solid fa-cart-shopping"></i> <label id="mobil_sepet">0</label>
+                                        <div class="spt">
+                                            <ul id="cartItm" class="cart-items"></ul>
+                                            <p class="cart-tl">Total: $0.00</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <nav class="nav_s">
+
+
+                    </nav>
+
+                    <div class="icons">
+                        <ul>
+                            <li class="list"><input type="text" placeholder="Search.." style="border-radius:10px;"></li>
+                            <li class="list"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li class="list"><i class="fa-regular fa-user"></i></li>
+                            <!--<li class="list"><i class="fa-regular fa-heart"></i></li>-->
+                            <li class="list">
+                                <i class="fa-regular fa-heart" id="favoriIcon"></i><label id="fav">0</label>
+
+
+                            </li>
+
+
+                            <li class="list cart-icon">
+                                <i class="fa-solid fa-cart-shopping"></i><span id="cartCount" class="cart-count">0</span>
+                                <div class="cart-dropdown">
+                                    <ul id="cartItems" class="cart-items"></ul>
+                                    <p class="cart-total">Total: $0.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div id="page_banner">
+                <div id="banner">
+                    <div id="msg_box">
+
+                        <p class="summer_s">Yaz İndirimleri</p>
+                        <h1 id="seventy_p">50% indirim</h1>
+                        <p class="promo_c"> b&c promosyon coduyla</p>
+
+                        <button id="shop_now" type="submit" name="shop now" onclick="change()">Alışverişe Başla </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid_f">
+                <div id="pro1" class="pro">
+                    <div id="msg">
+                        <!--<h2 class="summer_pro">ZARA</h2>-->
+                        <span class="shop_n animate__slideOutRight"><!--Alışveriş'e Başla--> <i class="fa-solid fa-arrow-right" style="font-size: 50px; font-weight: bold; color: black; margin-top: 50px; cursor: pointer;"></i></span>
+
+                    </div>
+                </div>
+                <div id="pro2" class="pro">
+                    <div id="msg">
+                        <!--<h2 class="summer_pro">ADİL IŞIK</h2>-->
+                        <span class="shop_n"><!--Alışveriş'e Başla--> <i class="fa-solid fa-arrow-right" style="font-size: 50px; font-weight: bold; color: black; margin-top: 50px; cursor: pointer;"></i></span>
+
+                    </div>
+                </div>
+                <div id="pro3" class="pro">
+                    <div id="msg">
+                        <!--<h2 class="summer_pro">H&M</h2>-->
+                        <span class="shop_n"><!--Alışveriş'e Başla-->  <i class="fa-solid fa-arrow-right" style="font-size:50px; font-weight:bold; color:black ; margin-top:50px; cursor:pointer;"></i></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid_s">
+                <div class="heading">
+                    <h2 class="cathegory">KATEGORİLER</h2>
+
+
+                </div>
+                <div class="content">
+                    <a href="#" class="category-link post" data-target="sweatshirts" class="post">
+                        <div id="first_post" class="sale">
+                            <img src="./img/sweat.jpg" class="pro_img">
+                            <p class="caption">Sweatshirts (11)</p>
+                            <!--<p class="caption"> <a href="#" class="category-link" data-target="sweatshirts">Sweatshirts</a></p>-->
+                        </div>
+                    </a>
+                    <a href="#" class="category-link post" data-target="jackets">
+                        <div id="first_post" class="sale">
+                            <img src="./img/jacket.jpg" class="pro_img">
+                            <p class="caption">Jackets (9)</p>
+                            <!--<p class="caption"><a href="#" class="category-link" data-target="jackets">Jackets</a></p>-->
+                        </div>
+                    </a>
+                    <a href="#" class="category-link post" data-target="dres">
+                        <div id="first_post" class="sale">
+                            <img src="./img/elbise.jpg" class="pro_img" style="height:170px;">
+                            <p class="caption">Dresses (27)</p>
+                            <!--<p class="caption"> <a href="#" class="category-link" data-target="dres">Dresses</a></p>-->
+                        </div>
+                    </a>
+                    <a href="#" class="category-link post" data-target="tops">
+                        <div id="first_post" class="sale">
+                            <img src="./img/tops.jpg" class="pro_img" style="height: 170px;">
+                            <p class="caption">Tops (58)</p>
+                            <!--<p class="caption"><a href="#" class="category-link" data-target="tops">Tops</a> </p>-->
+                        </div>
+                    </a>
+                    <a href="#" class="category-link post" data-target="tshirt">
+                        <div id="first_post" class="sale">
+                            <img src="./img/tss.jpg" style="height:170px;" class="pro_img">
+                            <p class="caption">T-shirts (35)</p>
+                            <!--<p class="caption"><a href="#" class="category-link" data-target="tshirt">T-shirt</a></p>-->
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+                <section id="sweatshirts" style="margin-top:50px;" class="category">
+                    <div class="row">
+                        <div class="col-12 card">
+                            <div class="container">
+                                <div class="col-12 sp">
+                                    <div class="container cnn">
+
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/sw.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Sweatshirt 1</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 1" data-price="18.00" data-imageurl="img/sw.jpg">Sepete Ekle</a>
+
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style="font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 2</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$40.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $28.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 2" data-price="28.00" data-imageurl="img/sw1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw2.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 3 </h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$40.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $38.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 3" data-price="38.00" data-imageurl="img/sw2.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw3.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 4</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name=" Sweatshirt 4" data-price="28.00" data-imageurl="img/sw3.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw4.jpg" />
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">Turkuaz Sweatshirt</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 5" data-price="18.00" data-imageurl="img/sw4.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style="font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw5.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 6</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 6" data-price="38.00" data-imageurl="img/sw5.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw6.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 7</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$32.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 7" data-price="28.00" data-imageurl="img/sw6.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/sw7.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 8</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$28.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Sweatshirt 8" data-price="28.00" data-imageurl="img/sw7.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/sw8.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sweatshirt 9</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Mor Sweatshirt" data-price="38.00" data-imageurl="img/sw8.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <section id="jackets" style="margin-top: 50px;" class="category">
+                    <div class="row">
+                        <div class="col-12 card">
+                            <div class="container">
+                                <div class="col-12 sp">
+                                    <div class="container cnn">
+
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 1</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$104.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $68.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 1" data-price="68.00" data-imageurl="img/jc.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 2</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 2" data-price="58.00" data-imageurl="img/jc1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/jc8.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 3</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 3" data-price="58.00" data-imageurl="img/jc8.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc7.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> Ceket 4</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 4" data-price="58.00" data-imageurl="img/jc7.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc4.jpg" />
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">Ceket 5</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 5" data-price="58.00" data-imageurl="img/jc4.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/jc5.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 6</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 6" data-price="58.00" data-imageurl="img/jc5.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc6.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 7</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 7" data-price="58.00" data-imageurl="img/jc6.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/jc7.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 8</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 8" data-price="58.00" data-imageurl="img/jc7.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/jc8.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Ceket 9</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$90.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $58.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Ceket 9" data-price="58.00" data-imageurl="img/jc8.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section id="dres" style="margin-top: 50px;" class="category">
+                    <div class="row">
+                        <div class="col-12 card">
+                            <div class="container">
+                                <div class="col-12 sp">
+                                    <div class="container cnn">
+
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 1</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$94.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 1" data-price="70.00" data-imageurl="img/dr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr2.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 2</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$94.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 2" data-price="70.00" data-imageurl="img/dr2.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr3.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 3</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$94.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 3" data-price="70.00" data-imageurl="img/dr3.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr4.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 4</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$100.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 4" data-price="70.00" data-imageurl="img/dr4.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop " data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr5.jpg" />
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">Elbise 5</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$100.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 5" data-price="70.00" data-imageurl="img/dr5.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style="font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr6.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 6</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$94.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 6" data-price="70.00" data-imageurl="img/dr6.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr7.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 7</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$94.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 7" data-price="70.00" data-imageurl="img/dr7.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 8</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$88.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 8" data-price="70.00" data-imageurl="img/dr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/dr2.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Elbise 9</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$108.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $70.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Elbise 9" data-price="70.00" data-imageurl="img/dr2.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="tops" style="margin-top: 50px;" class="category">
+                    <div class="row">
+                        <div class="col-12 card">
+                            <div class="container">
+                                <div class="col-12 sp">
+                                    <div class="container cnn">
+
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="kadin">
+                                            <div class="card_img">
+                                                <img src="img/cr1.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Siyah Crop</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$34.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $24.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="Siyah Crop" data-price="24.00" data-imageurl="img/cr1.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="tshirt" style="margin-top: 50px;" class="category">
+                    <div class="row">
+                        <div class="col-12 card">
+                            <div class="container">
+                                <div class="col-12 sp">
+                                    <div class="container cnn">
+
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> T-shirt 1</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 1" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> T-shirt 2</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 2" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title"> T-shirt 3</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 3" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">T-shirt 4</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 4" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body ">
+                                                <h5 class="card-title">T-shirt 5</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 5" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4 shop" data-gender="erkek">
+                                            <div class="card_img">
+                                                <img src="img/men.jpg" />
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">T-shirt 6</h5>
+                                                <p class="card-text"><h5 style="text-decoration: line-through;">$24.00</h5></p>
+                                                <p class="card-text"><h5> Discount  $18.00</h5></p>
+                                                <!--<a href="#" class="btn">Sepete Ekle</a>-->
+                                                <a href="#" class="btn add-to-cart" data-name="T-shirt 6" data-price="18.00" data-imageurl="img/men.jpg">Sepete Ekle</a>
+                                                <!--<i id="Favori" class="fa-regular fa-heart" style="color: #ea61cd; font-size: 1.6rem;"></i>-->
+                                                <span class="like_btnn"><i id="Favori" class="fa-regular fa-heart" style=" font-size: 1.6rem;"></i></span>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+            </div>
+
+            <!--END OF SECOND GIRD SECTION-->
+            <!--START OF THE NEW ARRIVALS SECTION-->
+            <div id="display_pro">
+                <h2 class="new_arr">Yeni Gelenler</h2>
+                <div id="flex">
+                    <div id="first_pro" class="one">
+                        <div class="img" id="img1"><span class="sale_tag">Sale!</span><span class="like_btn"><i class="fa-regular fa-heart"></i></span></div>
+                        <p class="caption_">Kadın Yeşil Elbise <br> <span class="cancelled">$50.00</span> <span class="new">$30.00</span></p>
+                    </div>
+
+                    <div id="first_pro" class="one">
+                        <div class="img" id="img2"><span class="sale_tag">Sale!</span><span class="like_btn"><i class="fa-regular fa-heart"></i></span></div>
+                        <p class="caption_">Siyah Bisiklet Yaka Crop <br> <span class="cancelled">$65.00</span> <span class="new">$40.00</span></p>
+                    </div>
+
+                    <div id="first_pro" class="one">
+                        <div class="img" id="img3"><span class="sale_tag">Sale!</span><span class="like_btn"><i class="fa-regular fa-heart"></i></span></div>
+                        <p class="caption_">Gelinlik<br> <span class="cancelled">$45.00</span> <span class="new">$35.00</span></p>
+                    </div>
+
+                    <div id="first_pro" class="one">
+                        <div class="img" id="img4"><span class="sale_tag">Sale!</span><span class="like_btn"><i class="fa-regular fa-heart"></i></span></div>
+                        <p class="caption_">Erkek Sweatshirts <br> <span class="cancelled">$70.00</span> <span class="new">$55.00</span></p>
+                    </div>
+
+                    <div id="first_pro" class="one">
+                        <div class="img" id="img5"><span class="sale_tag">Sale!</span><span class="like_btn"><i class="fa-regular fa-heart"></i></span></div>
+                        <p class="caption_">Kadın Sweatshirts <br> <span class="cancelled">$54.00</span> <span class="new">$43.00</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section id="blog">
+                <div id="blog_posts">
+                    <div class="blog_head">
+                        <span class="gray">Blog</span>
+                        <p class="head">Son Eklenen Blog Yazıları</p>
+                    </div>
+
+                    <div class="blog_post_box">
+                        <div class="blog">
+                            <img src="./img/bb.jpg" class="blogpost1 blogimg" alt="clothes on hangers">
+                            <p class="blogp_decrip">
+                                <span class="date">Kıyafet</span>
+                                <br>
+                                Yaz geldiğine göre dolaplar baştan yenilenecek
+                            </p>
+                        </div>
+                        <div class="blog">
+                            <img src="./img/ad.jpg" class="blogpost2 blogimg" alt="Orgaics for skincare">
+                            <p class="blogp_decrip">
+                                <span class="date">Adidas </span>
+                                <br>
+                                Adidas en rahat ayakkabısını tanıttı
+                            </p>
+                        </div>
+                        <div class="blog">
+                            <img src="./img/nn.jpg" class="blogpost3 blogimg" alt="shoe">
+                            <p class="blogp_decrip">
+                                <span class="date">Nike </span>
+                                <br>
+                                Nike bu ayakkabısıyla rakiplerine fark attı
+                            </p>
+                        </div>
+                    </div>
+                    <p class="centre" style="cursor:pointer;">Daha Fazlası</p>
+
+                </div>
+            </section>
+
+            <section id="features">
+                <div id="feat">
+                    <div class="overall">
+                        <div class="icon"><i class="fa-solid fa-truck"></i></div>
+                        <div class="info">
+                            <span class="uppercase">Ücretsiz Kargo</span><br>
+                            <span class="light">100 TL ve Üzeri alışverişlerde</span>
+                        </div>
+                    </div>
+
+                    <div class="overall">
+                        <div class="icon"><i class="fa-solid fa-retweet"></i></div>
+                        <div class="info">
+                            <span class="uppercase">İade</span><br>
+                            <span class="light">30 gün geri iade</span>
+                        </div>
+                    </div>
+
+                    <div class="overall">
+                        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                        <div class="info">
+                            <span class="uppercase">Güvenli Alışveriş</span><br>
+
+                        </div>
+                    </div>
+
+                    <div class="overall">
+                        <div class="icon"><i class="fa-solid fa-tag"></i></div>
+                        <div class="info">
+                            <span class="uppercase">100 den fazla stil</span><br>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer id="footer_box">
+                <section id="footer_content">
+                    <div class="f_foot">
+
+                        <h2 class="want">Ürünlerimizden Erken Haberdar Olmak İçin</h2>
+                        <div class="inputs">
+                            <input type="email" class="form_input" id="email" placeholder="E-mail adresinizi giriniz" />
+
+                            <button type="submit" class="form_input" id="submit">Gönder</button>
+                        </div>
+                    </div>
+                    <div class="s_foot">
+                        <div class="img_links">
+                            <h2 class="f_logo">B&C. Shopp</h2>
+                            <a href="" class="logo_link">
+                                <i class="fa-brands fa-facebook gray"></i>
+
+                            </a>
+                            <a href="https://www.youtube.com" class="logo_link">
+                                <i class="fa-brands fa-youtube gray"></i>
+                            </a>
+                            <a href="https://www.twitter.com" class="logo_link">
+                                <i class="fa-brands fa-twitter gray"></i>
+                            </a>
+                            <a href="https://wwww.instagram.com" class="logo_link">
+                                <i class="fa-brands fa-instagram gray"></i>
+                            </a>
+
+                        </div>
+                        <div class="space">
+                            <div class="other_links">
+                                <span class="bold">Destek</span><br>
+                                <a href="" class="block_links">Bize Ulaşın</a>
+                                <a href="" class="block_links">SSS</a>
+                                <a href="" class="block_links">
+                                    Nakliye & İade
+                                </a>
+
+                            </div>
+
+                            <div class="other_links">
+                                <span class="bold">SHOP</span><br>
+                                <a href="" class="block_links">Erkek</a>
+                                <a href="" class="block_links">Kadın</a>
+                                <a href="" class="block_links">Bebek-Çocuk</a>
+                                <a href="" class="block_links">Süper Market</a>
+                            </div>
+
+                            <div class="other_links">
+                                <span class="bold">Şirketimiz</span><br>
+                                <a href="" class="block_links">Bizim hikayemiz</a>
+                                <a href="" class="block_links">Kariyer</a>
+                                <a href="" class="block_links">
+                                    Şartlar ve Koşullar
+                                </a>
+                                <a href="" class="block_links">Gizlilik ve Çerez Politikası</a>
+                            </div>
+                            <div class="other_links">
+                                <span class="bold">İletişim</span><br>
+                                <a href="tel:+905061447418" class="block_links">+90 (506) 144 74 18</a>
+
+
+                                <a href="mailto:temennicoskun@gmail.com" class="block_links">temennicoskun@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="extras">
+                        <p class="copy">&copy; 2023 Tüm Hakları Saklıdır.</p>
+                        <div class="pay">
+
+                            <img src="/img/mastercard.svg" class="payments" />
+                            <img src="/img/visa.svg" class="payments" />
+                            <img src="/img/amex.svg" class="payments" />
+                            <img src="/img/paypal.svg" class="payments" />
+                            <img src="/img/maestro.svg" class="payments" />
+                        </div>
+                    </div>
+                </section>
+            </footer>
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const categoryLinks = document.querySelectorAll('.category-link');
+        const categories = document.querySelectorAll('.category');
+
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const target = this.getAttribute('data-target');
+
+                categories.forEach(category => {
+                    if (category.id === target) {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+    <script>
+
+
+
+        const drawerTrigger = document.getElementById('drawer_trigger');
+        const drawerContent = document.getElementById('drawer_content');
+        const pageBanner = document.getElementById('page_banner');
+        let isOpen = false;
+
+        drawerTrigger.addEventListener('click', () => {
+            if (isOpen) {
+                drawerContent.style.display = 'none';
+                pageBanner.style.marginTop = '120px';
+            } else {
+                drawerContent.style.display = 'block';
+                pageBanner.style.marginTop = '360px';
+            }
+            isOpen = !isOpen;
+        });
+
+
+    </script>
+
+
+
+    <script>
+
+        function toggleHeart(btn) {
+            const heartIcon = btn.querySelector('i');
+            heartIcon.classList.toggle('red-heart');
+            showAlert();
+        }
+
+        function showAlert() {
+            alert('İlgili Ürün Favorilere eklendi!');
+        }
+
+        const likeBtns = document.querySelectorAll('.like_btn');
+        likeBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                toggleHeart(this);
+            });
+        });
+
+        const likeeBtns = document.querySelectorAll('.like_btnn');
+        likeeBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                toggleHeart(this);
+            });
+        });
+
+
+
+
+
+    </script>
+    <script>
+        const addToCartButtons = document.querySelectorAll('.btn');
+
+        let cartCount = 0;
+        const cartCountElement = document.getElementById('cartCount');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                cartCount++;
+                cartCountElement.innerText = cartCount;
+            });
+        });
+    </script>
+    <script>
+        const likedBtns = document.querySelectorAll('.like_btn, .like_btnn');
+        const favLabel = document.getElementById("fav");
+
+        likedBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const currentCount = parseInt(favLabel.innerText, 10);
+                favLabel.innerText = currentCount + 1;
+            });
+        });
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartIcon = document.querySelector(".cart-icon");
+            const cartDropdown = document.querySelector(".cart-dropdown");
+            const cartItems = document.getElementById("cartItems");
+            const cartCount = document.getElementById("cartCount");
+
+            cartIcon.addEventListener("click", function (event) {
+                event.preventDefault();
+                cartIcon.classList.toggle("active");
+            });
+
+            const completePaymentButton = document.createElement("button");
+            completePaymentButton.textContent = "Ödemeyi Tamamla";
+            completePaymentButton.classList.add("btn");
+
+
+            completePaymentButton.addEventListener("click", function () {
+
+                window.location.href = "sepet.html";
+            });
+
+
+            cartDropdown.appendChild(completePaymentButton);
+
+            function addToCart(item) {
+                const cartItem = document.createElement("li");
+                cartItem.className = "cart-item";
+                cartItem.innerHTML = `
+                                                                    <img src="${item.imageUrl}" alt="${item.name}">
+                                                                        <p>${item.name} - <span>$${item.price.toFixed(2)}</span></p>
+                                                                        `;
+                cartItems.appendChild(cartItem);
+
+                const itemCount = cartItems.querySelectorAll(".cart-item").length;
+                const total = calculateTotal();
+                cartCount.textContent = itemCount;
+            }
+
+
+
+            function calculateTotal() {
+                let total = 0;
+                const itemPrices = cartItems.querySelectorAll(".cart-item span");
+                itemPrices.forEach(itemPrice => {
+                    total += parseFloat(itemPrice.textContent.replace("$", ""));
+                });
+
+                const cartTotal = document.querySelector(".cart-total");
+                cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+
+                return total;
+            }
+
+
+
+
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    const itemName = button.dataset.name;
+                    const itemPrice = parseFloat(button.dataset.price);
+                    const imageUrl = button.dataset.imageurl;
+
+                    const newItem = {
+                        name: itemName,
+                        price: itemPrice,
+                        imageUrl: imageUrl
+                    };
+
+                    addToCart(newItem);
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+
+        const mobilfav = document.querySelector("#mobil_fav");
+        const buton_1_2 = document.querySelectorAll(".like_btn", ".like_btnn");
+
+        buton_1_2.forEach(btnlar => {
+            btnlar.addEventListener("click", () => {
+                const sayac = parseInt(mobilfav.innerText, 10);
+                mobilfav.innerText = sayac + 1;
+            })
+        })
+
+
+    </script>
+
+
+    <script>
+
+        const ekbuton = document.querySelectorAll(".add-to-cart");
+        const mobilsepet = document.querySelector("#mobil_sepet");
+
+        ekbuton.forEach(bgnbtn => {
+            bgnbtn.addEventListener("click", () => {
+                const bgnsayac = parseInt(mobilsepet.innerText, 10);
+                mobilsepet.innerText = bgnsayac + 1;
+            })
+        })
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartIconn = document.querySelector(".cart-icn");
+            const spt = document.querySelector(".spt");
+            const cartItm = document.getElementById("cartItm");
+            const cartCountt = document.getElementById("mobil_sepet"); // Buradaki labelin id'si olacak
+
+            cartIconn.addEventListener("click", function (event) {
+                event.preventDefault();
+                cartIconn.classList.toggle("active");
+            });
+
+            const completePaymentButtonn = document.createElement("button");
+            completePaymentButtonn.textContent = "Ödemeyi Tamamla";
+            completePaymentButtonn.classList.add("btn");
+
+            completePaymentButtonn.addEventListener("click", function () {
+                window.location.href = "sepet.html";
+            });
+
+            spt.appendChild(completePaymentButtonn);
+
+            function addToCartmbl(item) {
+                const cartItms = document.createElement("li");
+                cartItms.className = "cartItm";
+                cartItms.innerHTML = `
+                        <img src="${item.imageUrl}" alt="${item.name}">
+                        <p>${item.name} - <span>$${item.price.toFixed(2)}</span></p>`;
+                cartItm.appendChild(cartItms);
+
+                const itemCountt = cartItm.querySelectorAll(".cartItm").length;
+                const totall = calculateTotall();
+                cartCountt.textContent = itemCountt;
+            }
+
+            function calculateTotall() {
+                let totall = 0;
+                const itemPricess = cartItm.querySelectorAll(".cartItm span");
+                itemPricess.forEach(itemPricee => {
+                    totall += parseFloat(itemPricee.textContent.replace("$", ""));
+                });
+
+                const cartTotall = document.querySelector(".cart-tl");
+                cartTotall.textContent = `Total: $${totall.toFixed(2)}`;
+
+                return totall;
+            }
+
+            const addToCartButtonss = document.querySelectorAll(".add-to-cart"); // Burada sınıf adını değiştirdik
+            addToCartButtonss.forEach(buttonb => {
+                buttonb.addEventListener("click", function (event) { // Burada da değiştirdik
+                    event.preventDefault();
+
+                    const itemNamee = buttonb.dataset.name;
+                    const itemPriceee = parseFloat(buttonb.dataset.price);
+                    const imageUrlll = buttonb.dataset.imageurl;
+
+                    const newItemms = {
+                        name: itemNamee,
+                        price: itemPriceee,
+                        imageUrl: imageUrlll
+                    };
+
+                    addToCartmbl(newItemms);
+                });
+            });
+        });
+    </script>
+
+
+
+
+</body>
+</html>

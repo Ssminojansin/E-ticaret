@@ -1,0 +1,251 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    /*background-image: url(../img/header_alani.jpg);*/
+    background-image: url(/img/header_alani.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+   /* object-fit:cover;*/
+    background-position:center;
+    min-height: 580px;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background: transparent;
+
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  
+}
+
+.logo a img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 170px;
+}
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        margin-top: 50px;
+    }
+
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+nav a .active, nav a:hover {
+    background: #24CAAC;
+    transition: .3s;
+    color: white !important;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top:50px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    label .logo {
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+
+    .logo a img {
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 160px;
+    }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+            nav ul li a {
+                color: white;
+                font-size: 15px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+    nav a .active, nav a:hover {
+        background: #24CAAC;
+        transition: .3s;
+        color: white !important;
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+}
+
+@media (max-width:1080px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1080px) {
+    .checkbtn {
+        display: block;
+        margin-right: 120px;
+    }
+
+    nav ul {
+        /*   position: fixed;*/
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(to right, #0979CD, #108BCF, #1BA6D1, #35C2D6, #2BCDD2);
+        top: 200px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+    a:hover, a .active {
+        /* background:none;*/
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width:757px) {
+    .checkbtn {
+        display: block;
+        margin-right: 120px;
+    }
+
+    nav ul {
+        /*   position: fixed;*/
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(to right, #0979CD, #108BCF, #1BA6D1, #35C2D6, #2BCDD2);
+        top: 244px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+        nav ul li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+
+            nav ul li a {
+                font-size: 20px;
+            }
+
+    a:hover, a .active {
+        /* background:none;*/
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ section {
+        margin-top: 500px !important;
+    }
+}
+
+
+
+.baslik h1 {
+    margin-top: 150px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
